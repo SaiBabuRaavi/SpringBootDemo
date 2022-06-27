@@ -1,0 +1,24 @@
+
+#Spring Properties
+spring:
+  application:
+    name: SpringSecurity-Data-Application
+  # Jpa Properties
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_boot_demo?serverTimezone=UTC
+    username: root
+    password: Test@12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  jpa:
+    open-in-view: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        show_sql: true
+        cache:
+          use_query_cache: false
+          use_second_level_cache: false
